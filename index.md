@@ -1,15 +1,13 @@
-Hello World!
+# Hello World!
 
 ---
 
+## [Link](https://thanhnhanlam.github.io/cse15l-lab-reports/newFile.html)
+
 *Italic*
+
 __Bold__
 
-# Heading 1
-
-## Heading 2
-
-[Link](https://thanhnhanlam.github.io/cse15l-lab-reports/newFile.html)
 ![Image][1]
 > Blockquote
 
