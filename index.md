@@ -8,7 +8,6 @@
 
 __Bold__
 
-![Image][1]
 > Blockquote
 
 * List
@@ -27,5 +26,7 @@ __Bold__
 # code block
 
 ```
+
+![Image][1]
 
 [1]:https://commonmark.org/help/images/favicon.png
