@@ -4,10 +4,10 @@ Hello World!
 
 *Italic*
 __Bold__
-Heading 1
-==
-Heading 2
---
+
+# Heading 1
+
+## Heading 2
 
 [Link](https://thanhnhanlam.github.io/cse15l-lab-reports/newFile.html)
 ![Image][1]
