@@ -4,6 +4,8 @@
 
 ## [Link](https://thanhnhanlam.github.io/cse15l-lab-reports/newFile.html)
 
+[Lab Report 1](lab-report-1-week-2.html)
+
 [Link to lab-report-1-week-2](https://thanhnhanlam.github.io/cse15l-lab-reports/lab-report-1-week-2.html)
 
 *Italic*
