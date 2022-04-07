@@ -3,6 +3,7 @@
 ---
 
 ## [Link](https://thanhnhanlam.github.io/cse15l-lab-reports/newFile.html)
+[Link to lab-report-1-week-2](lab-report-1-week-2.md)
 
 *Italic*
 
