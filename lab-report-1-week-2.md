@@ -85,11 +85,29 @@ Run the program on the server with `javac WhereAmI.java`, then `java WhereAmI`.
 
 ### 5. Setting an SSH Key
 
-To set an SSH Key, in the client, execute the command: 
-
+To avoid entering your password every you run the command `scp`, you can use ssh keys. 
+To create a public/private rsa key pair, in the client, execute the following command in the client: 
 `ssh-keygen`
 
-You will be prompted to enter a password. You can leave the password blank and press `Enter`.
+If you are on Windows, run this command instead: 
+`ssh-keygen -t ed25519`
+
+When prompted to enter a file in which to save the key, input the path with your client's username instead of "<user-name>": 
+`/Users/<user-name>/.ssh/id_rsa`
+
+You will be prompted to enter a passphrase, but you should leave it empty (press `Enter`).
+
+The private key (id_rsa) and the public key (id_rsa.pub) have been created in the ".ssh" directory of your computer.
+
+You now need to copy the public key only to the ".ssh" of your user account on the server.
+On the server, create a ".ssh" directory with: 
+`mkdir .ssh`
+
+`logout` (`Ctrl + D`) of the server. Now, on the client, copy the public key using: 
+`scp /Users/<user-name>/.ssh/id_rsa.pub cs15lsp22xxx@ieng6.ucsd.edu:~/.ssh/authorized_keys`
+where "<user-name>" is your username on your client.
+
+You should now be able to use the commands `ssh` and `scp` without being required to enter your password: 
 
 ### 6. Optimizing Remote Running
 
