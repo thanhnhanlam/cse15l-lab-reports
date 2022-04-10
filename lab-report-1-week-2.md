@@ -92,29 +92,41 @@ To create a public/private rsa key pair, in the client, execute the following co
 If you are on Windows, run this command instead: 
 `ssh-keygen -t ed25519`
 
-When prompted to enter a file in which to save the key, input the path with your client's username instead of "<user-name>": 
+When prompted to enter a file in which to save the key, input the path with your client's username instead of `<user-name>`: 
+
 `/Users/<user-name>/.ssh/id_rsa`
 
 You will be prompted to enter a passphrase, but you should leave it empty (press `Enter`).
 
-The private key (id_rsa) and the public key (id_rsa.pub) have been created in the ".ssh" directory of your computer.
+The private key (id_rsa) and the public key (id_rsa.pub) have been created in the ".ssh" directory of your local computer.
 
 You now need to copy the public key only to the ".ssh" of your user account on the server.
 On the server, create a ".ssh" directory with: 
+
 `mkdir .ssh`
 
 `logout` (`Ctrl + D`) of the server. Now, on the client, copy the public key using: 
 `scp /Users/<user-name>/.ssh/id_rsa.pub cs15lsp22xxx@ieng6.ucsd.edu:~/.ssh/authorized_keys`
-where "<user-name>" is your username on your client.
+where `<user-name>` is your username on your client.
 
 You should now be able to use the commands `ssh` and `scp` without being required to enter your password: 
 
 ### 6. Optimizing Remote Running
 
-There are other ways to copy a file from the client to the server more quickly. 
-Instead of typing previous commands, you can use the up arrow. 
-You can run many commands at the same time by adding a `;` between them. 
-If you add a command in quotes `""` after `ssh`, the client will access the remote account, then run these commands and exit the account.
+There are ways to copy a file from the client to the server more quickly. 
+- Instead of typing previous commands, you can use the up arrow to recall the last command that was run (keep pressing the arrow to recall even older commands). 
+- You can run many commands at the same time by adding a `;` between them. 
+- If you add a command in quotes `""` after `ssh`, the client will access the remote account, then run the command and exit the account.
+  
+After making a local edit to "WhereAmI.java", you can copy the updated file to the server and run it on the server with the following command: 
+`scp WhereAmI.java cs15lsp22xxx@ieng6.ucsd.edu:~/;ssh cs15lsp22xxx@ieng6.ucsd.edu "javac WhereAmI.java; java WhereAmI"`
+
+---
+
+Replace `cs15lsp22xxx` by your user account's username on the remote server.
+  
+Replace `<user-name>` by the username of your local computer.
+
 
 [VSCode Download Webpage]: screenshot-installing-vscode-webpage.png
 [VSCode Screenshot]: screenshot-vscode.png
