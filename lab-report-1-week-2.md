@@ -8,7 +8,7 @@ In this tutorial, you will learn how to log into a course-specific account on `i
 
 Go to https://code.visualstudio.com/Download. Click on the button corresponding to your operating system (macOC, Windows, or Linux) to download Visual Studio Code.
 
-![Download VSCode][VSCode Download Webpage]
+![VSCode Download Webpage][VSCode Download Webpage]
 
 Follow the instructions to install VSCode. Once installed, opening VSCode should look like this (yours might be a little different depending on your settings). 
 
@@ -44,5 +44,5 @@ Here are some common commands to try:
 
 
 
+[VSCode Download Webpage]: screenshot-installing-vscode-webpage.png
 [VSCode Screenshot]: screenshot-vscode.png
-[VSCode Download Webpage]: screenshot-intalling-vscode-webpage.png
