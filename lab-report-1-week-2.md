@@ -6,43 +6,85 @@ In this tutorial, you will learn how to log into a course-specific account on `i
 
 ### 1. Installing VSCode
 
-Go to https://code.visualstudio.com/Download. Click on the button corresponding to your operating system (macOC, Windows, or Linux) to download Visual Studio Code.
+Go to https://code.visualstudio.com/Download. Click on the button corresponding to your operating system (macOC, Windows, or Linux) to download Visual Studio Code: 
 
 ![VSCode Download Webpage][VSCode Download Webpage]
 
-Follow the instructions to install VSCode. Once installed, opening VSCode should look like this (yours might be a little different depending on your settings). 
+Follow the instructions to install VSCode. Once installed, opening VSCode should look like this (yours might be a little different depending on your settings): 
 
 ![VSCode Screenshot][VSCode Screenshot]
 
 ### 2. Remotely Connecting
 
-Open the terminal in VSCode. You can go to `Terminal` > `New Terminal` or use ``Ctrl + ` ``.
+You will need your course-specific account for CSE15L. You can find it at https://sdacs.ucsd.edu/~icc/index.php. 
 
-To connect to the course-specific account on `ieng6`, run the command in your terminal: 
+Enter you username and Student ID in the corresponding input fields, then click `Submit`: 
+
+![Account Lookup Tool][Account Lookup Tool]
+
+You will then find your course-specific account: 
+
+![Course-Specific Account][Course-Specific Account]
+
+Open the terminal in VSCode. You can press ``Ctrl + ` `` or go to `Terminal` > `New Terminal` to open the terminal: 
+
+![New Terminal Button][New Terminal Button]
+
+To connect to the course-specific account on `ieng6`, run the following command in your terminal with your username instead of `cse15lsp22xxx`: 
 
 `ssh cse15lsp22xxx@ieng6.ucsd.edu`
 
-where `cse15lsp22xxx` is your username, and `ieng6.ucsd.edu` is the hostname. 
-You should now be connected to the remote server.
+You will be prompted to write your password. Enter your password (nothing will be displayed as you type).
+
+![]
+
+Your computer (client) should now be connected to a computer in the CSE basement (server).
 
 ### 3. Trying Some Commands
 
-Here are some common commands to try: 
-* `cd`
-* `cd ..`
+Try running the following commands both on your computer and on the remote server: 
 * `cd ~`
-* `ls -h`
-* `ls`
+* `cd`
+* `ls -lat`
+* `ls -a`
+* cp /home/linux/ieng6/cs15lsp22/public/hello.txt ~/
+* cat /home/linux/ieng6/cs15lsp22/public/hello.txt
+
+You can then exit the remote computer by running the command `exit`: 
+
+![Exit Remote Computer][Exit Server]
 
 ### 4. Moving Files with `scp`
 
+In order to copy files from the client to the remote server, we can run the following command: 
 
+`scp WhereAmI.java cs15lsp22xxx@ieng6.ucsd.edu:~/`
+
+This will copy `WhereAmI.java` to the server.
 
 ### 5. Setting an SSH Key
 
+To set an SSH Key, in the client, execute the command: 
+
+`ssh-keygen`
+
+You will be prompted to enter a password. You can leave the password blank and press `Enter`.
+
 ### 6. Optimizing Remote Running
 
-
+There are other ways to copy a file from the client to the server more quickly. 
+Instead of typing previous commands, you can use the up arrow. 
+You can run many commands at the same time by adding a `;` between them. 
+If you add a command in quotes `""` after `ssh`, the client will access the remote account, then run these commands and exit the account.
 
 [VSCode Download Webpage]: screenshot-installing-vscode-webpage.png
 [VSCode Screenshot]: screenshot-vscode.png
+[Account Lookup Tool]: 
+[Course-Specific Account]: 
+[Exit Server]: 
+[New Terminal Button]: screenshot-new-terminal-button.png
+
+Guidelines
+include the steps you took to log into a course-specific account on ieng6 
+with at least 6 screenshots (of what each step looked like)
+2-3 sentences for each step describing what you did
