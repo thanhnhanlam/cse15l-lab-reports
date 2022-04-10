@@ -47,8 +47,8 @@ Try running the following commands both on your computer and on the remote serve
 * `cd`
 * `ls -lat`
 * `ls -a`
-* cp /home/linux/ieng6/cs15lsp22/public/hello.txt ~/
-* cat /home/linux/ieng6/cs15lsp22/public/hello.txt
+* `cp /home/linux/ieng6/cs15lsp22/public/hello.txt ~/`
+* `cat /home/linux/ieng6/cs15lsp22/public/hello.txt`
 
 You can then exit the remote computer by running the command `exit`: 
 
@@ -56,11 +56,32 @@ You can then exit the remote computer by running the command `exit`:
 
 ### 4. Moving Files with `scp`
 
-In order to copy files from the client to the remote server, we can run the following command: 
+In this step, you will copy files from you computer to the remote server. Let's start by creating a file called "WhereAmI.java" with the following program: 
+```
+class WhereAmI {
+  public static void main(String[] args) {
+    System.out.println(System.getProperty("os.name"));
+    System.out.println(System.getProperty("user.name"));
+    System.out.println(System.getProperty("user.home"));
+    System.out.println(System.getProperty("user.dir"));
+  }
+}
+```
+
+Run it on your computer's terminal with `javac WhereAmI.java`, then `java WhereAmI`.
+
+In order to copy files from your computer to the remote server, your working directory has to contain the file you want to copy. 
+Run the following command in the client to copy "WhereAmI.java" to the server's home directory (`~/`): 
 
 `scp WhereAmI.java cs15lsp22xxx@ieng6.ucsd.edu:~/`
 
-This will copy `WhereAmI.java` to the server.
+`cs15lsp22xxx` should be your username.
+
+Enter your password when prompted to do so.
+
+Login to `ieng6` and verify that "WhereAmI.java" is on the server by running the command `ls`.
+
+Run the program on the server with `javac WhereAmI.java`, then `java WhereAmI`.
 
 ### 5. Setting an SSH Key
 
