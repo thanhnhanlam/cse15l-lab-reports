@@ -157,16 +157,16 @@ Replace `cs15lsp22xxx` by your user account's username on the remote server.
   
 Replace `<user-name>` by the username of your local computer.
 
-[Download VSCode]: download-vscode.png
-[VSCode Screenshot]: vscode.png
-[Account Lookup Tool]: account-lookup.png
-[CSE Account]: cse-account-lookup.png
-[SSH Login]: ssh-login.png
-[Exit Server]: exit-server.png
-[New Terminal Button]: new-terminal-button.png
-[Run Commands]: run-commands.png
-[Program File]: program-file.png
-[Run SCP]: run-scp.png
-[SSH Keys]: ssh-keys.png
-[Login Without Password]: login-without-password.png
-[Optimized Command]: optimized-command.png
+[Download VSCode]: Images/lab-report-1-week-2-screenshots/download-vscode.png
+[VSCode Screenshot]: Images/lab-report-1-week-2-screenshots/vscode.png
+[Account Lookup Tool]: Images/lab-report-1-week-2-screenshots/account-lookup.png
+[CSE Account]: Images/lab-report-1-week-2-screenshots/cse-account-lookup.png
+[SSH Login]: Images/lab-report-1-week-2-screenshots/ssh-login.png
+[Exit Server]: Images/lab-report-1-week-2-screenshots/exit-server.png
+[New Terminal Button]: Images/lab-report-1-week-2-screenshots/new-terminal-button.png
+[Run Commands]: Images/lab-report-1-week-2-screenshots/run-commands.png
+[Program File]: Images/lab-report-1-week-2-screenshots/program-file.png
+[Run SCP]: Images/lab-report-1-week-2-screenshots/run-scp.png
+[SSH Keys]: Images/lab-report-1-week-2-screenshots/ssh-keys.png
+[Login Without Password]: Images/lab-report-1-week-2-screenshots/login-without-password.png
+[Optimized Command]: Images/lab-report-1-week-2-screenshots/optimized-command.png
