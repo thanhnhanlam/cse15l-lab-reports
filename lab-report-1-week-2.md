@@ -8,7 +8,7 @@ In this tutorial, you will learn how to log into a course-specific account on `i
 
 Go to https://code.visualstudio.com/Download. Click on the button corresponding to your operating system (macOC, Windows, or Linux) to download Visual Studio Code: 
 
-![VSCode Download Webpage][VSCode Download Webpage]
+![VSCode Download Webpage][Download VSCode]
 
 Follow the instructions to install VSCode. Once installed, opening VSCode should look like this (yours might be a little different depending on your settings): 
 
@@ -16,15 +16,15 @@ Follow the instructions to install VSCode. Once installed, opening VSCode should
 
 ### 2. Remotely Connecting
 
-You will need your course-specific account for CSE15L. You can find it at https://sdacs.ucsd.edu/~icc/index.php. 
+You can find your course-specific account for CSE15L at https://sdacs.ucsd.edu/~icc/index.php. 
 
 Enter you username and Student ID in the corresponding input fields, then click `Submit`: 
 
-![Account Lookup Tool][Account Lookup Tool]
+![CSE Account Lookup Tool][Account Lookup Tool]
 
-You will then find your course-specific account: 
+You will be able to see your course-specific account: 
 
-![Course-Specific Account][Course-Specific Account]
+![Course-Specific Account][CSE Account]
 
 Open the terminal in VSCode. You can press ``Ctrl + ` `` or go to `Terminal` > `New Terminal` to open the terminal: 
 
@@ -36,27 +36,39 @@ To connect to the course-specific account on `ieng6`, run the following command 
 
 You will be prompted to write your password. Enter your password (nothing will be displayed as you type).
 
-![]
+![SSH Login][SSH Login]
 
 Your computer (client) should now be connected to a computer in the CSE basement (server).
 
 ### 3. Trying Some Commands
 
 Try running the following commands both on your computer and on the remote server: 
-* `cd ~`
 * `cd`
-* `ls -lat`
+  * `cd` means "change (working) directory", but will do nothing because the path is not specified
+* `cd ~`
+  * this command will go to the home directory (represented by `~` or `~/`)
+* `pwd`
+  * `pwd` means "pring working directory" and will print the path of the working directory
 * `ls -a`
+  * this command will display all the content of the current working directory (in alphabetical order)
+* `ls -at`
+  * this command will display all the content of the current working directory in chronological order
+* `ls -lat`
+  * this command will display a list of all the content of the current working directory in chronological order in the form of a list
+  * `-lat` is the combination of `-a`, `-l`, and `-t`
 * `cp /home/linux/ieng6/cs15lsp22/public/hello.txt ~/`
+  * `cp` will copy the specified file `/home/linux/ieng6/cs15lsp22/public/hello.txt` to the specified location `~/`
 * `cat /home/linux/ieng6/cs15lsp22/public/hello.txt`
+  * `cat` means "concatenate` and will display the content of the specified file
+* `exit`
+  * this commands logs you out of the remote server
+  * alternatively, you can use the command `logout` or press `Ctrl + D`
 
-You can then exit the remote computer by running the command `exit`: 
-
-![Exit Remote Computer][Exit Server]
+![Running the Commands][Run Commands]
 
 ### 4. Moving Files with `scp`
 
-In this step, you will copy files from you computer to the remote server. Let's start by creating a file called "WhereAmI.java" with the following program: 
+In this step, you will copy files from you computer to the remote server. Create a file called "WhereAmI.java" with the following program: 
 ```
 class WhereAmI {
   public static void main(String[] args) {
@@ -68,9 +80,11 @@ class WhereAmI {
 }
 ```
 
-Run it on your computer's terminal with `javac WhereAmI.java`, then `java WhereAmI`.
+![WhereAmI.java][Program File]
 
-In order to copy files from your computer to the remote server, your working directory has to contain the file you want to copy. 
+Run it on your computer's terminal using `javac WhereAmI.java`, then `java WhereAmI`.
+
+In order to copy files from your computer to the remote server, your working directory has to be the one containing the file you want to copy. 
 Run the following command in the client to copy "WhereAmI.java" to the server's home directory (`~/`): 
 
 `scp WhereAmI.java cs15lsp22xxx@ieng6.ucsd.edu:~/`
@@ -82,6 +96,8 @@ Enter your password when prompted to do so.
 Login to `ieng6` and verify that "WhereAmI.java" is on the server by running the command `ls`.
 
 Run the program on the server with `javac WhereAmI.java`, then `java WhereAmI`.
+
+![Copy the File and Run the Program Remotely][Run SCP]
 
 ### 5. Setting an SSH Key
 
@@ -105,11 +121,19 @@ On the server, create a ".ssh" directory with:
 
 `mkdir .ssh`
 
-`logout` (`Ctrl + D`) of the server. Now, on the client, copy the public key using: 
+`exit` the server.
+
+![Generate SSH-Key Pair][SSH Keys] 
+
+Then, on the client, copy the public key using: 
+
 `scp /Users/<user-name>/.ssh/id_rsa.pub cs15lsp22xxx@ieng6.ucsd.edu:~/.ssh/authorized_keys`
+
 where `<user-name>` is your username on your client.
 
 You should now be able to use the commands `ssh` and `scp` without being required to enter your password: 
+
+![Login Without Password][Login Without Password]
 
 ### 6. Optimizing Remote Running
 
@@ -121,21 +145,28 @@ There are ways to copy a file from the client to the server more quickly.
 After making a local edit to "WhereAmI.java", you can copy the updated file to the server and run it on the server with the following command: 
 `scp WhereAmI.java cs15lsp22xxx@ieng6.ucsd.edu:~/;ssh cs15lsp22xxx@ieng6.ucsd.edu "javac WhereAmI.java; java WhereAmI"`
 
+![Optimized Command][Optimized Command]
+
+---
+
+Sources Used: Lab 1 Writeup and Lab 1 group notes
+
 ---
 
 Replace `cs15lsp22xxx` by your user account's username on the remote server.
   
 Replace `<user-name>` by the username of your local computer.
 
-
-[VSCode Download Webpage]: screenshot-installing-vscode-webpage.png
-[VSCode Screenshot]: screenshot-vscode.png
-[Account Lookup Tool]: 
-[Course-Specific Account]: 
-[Exit Server]: 
-[New Terminal Button]: screenshot-new-terminal-button.png
-
-Guidelines
-include the steps you took to log into a course-specific account on ieng6 
-with at least 6 screenshots (of what each step looked like)
-2-3 sentences for each step describing what you did
+[Download VSCode]: download-vscode.png
+[VSCode Screenshot]: vscode.png
+[Account Lookup Tool]: account-lookup.png
+[CSE Account]: cse-account-lookup.png
+[SSH Login]: ssh-login.png
+[Exit Server]: exit-server.png
+[New Terminal Button]: new-terminal-button.png
+[Run Commands]: run-commands.png
+[Program File]: program-file.png
+[Run SCP]: run-scp.png
+[SSH Keys]: ssh-keys.png
+[Login Without Password]: login-without-password.png
+[Optimized Command]: optimized-command.png
