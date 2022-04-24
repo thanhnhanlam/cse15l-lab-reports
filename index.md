@@ -1,34 +1,25 @@
-# Hello World!
+# CSE 15L Lab Reports
+
+> [Link to the Github repo][Github Repo]
 
 ---
 
-## [Link](https://thanhnhanlam.github.io/cse15l-lab-reports/newFile.html)
+1. [__Lab Report 1__][Lab Report 1]
 
-[Lab Report 1](lab-report-1-week-2.html)
+2. [*Lab Report 2*][Lab Report 2]
 
-[Lab Report 1](https://thanhnhanlam.github.io/cse15l-lab-reports/lab-report-1-week-2.html)
-
-*Italic*
-
-__Bold__
-
-> Blockquote
-
-* List
-* List
-* List
-
-1. One
-2. Two
-3. Three
 ***
-`Inline code`
+
+* Link to a [newFile](https://thanhnhanlam.github.io/cse15l-lab-reports/newFile.html)
+* `Inline code`
 
 ```
 # code block
-
 ```
 
 ![Image][1]
 
+[Github Repo]: https://github.com/thanhnhanlam/cse15l-lab-reports.git
+[Lab Report 1]: lab-report-1-week-2.html
+[Lab Report 2]: https://thanhnhanlam.github.io/cse15l-lab-reports/lab-report/lab-report-2-week-4.html
 [1]:https://commonmark.org/help/images/favicon.png
