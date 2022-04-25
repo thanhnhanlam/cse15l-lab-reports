@@ -37,6 +37,6 @@ the bug, the symptom, and the failure-inducing input.
 
 ![Code Change End With Open Bracket][Commit End Open Bracket]
 
-[Commit Without Link]: ../image/commit-extra-line.png
-[Commit Extra Line]: ../image/commit-without-link.png
-[Commit End Open Bracket]: ../image/commit-end-open-bracket.png
+[Commit Without Link]: ../image/lab-report-2/commit-extra-line.png
+[Commit Extra Line]: ../image/lab-report-2/commit-without-link.png
+[Commit End Open Bracket]: ../image/lab-report-2/commit-end-open-bracket.png
