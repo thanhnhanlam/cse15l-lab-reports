@@ -8,12 +8,14 @@ This lab report will focus on three of these changes.
 
 ### 1. Adding an extra line at the end of the file
 
-![Code Change With Extra Line][Commit Extra Line]
-
 The **failure-inducing** input that prompted me to make that change is 
 **adding an extra line at the end of the file**.
 
-Link to the test file for this failure-inducing input.
+The code change diff: 
+![Code Change With Extra Line][Commit Extra Line]
+
+Link to the test file for this failure-inducing input: 
+[test-extra-line.md](https://github.com/thanhnhanlam/markdown-parser/blob/main/test-extra-line.md)
 
 The symptom of the failure-inducing input: 
 ```
@@ -33,12 +35,13 @@ the bug, the symptom, and the failure-inducing input.
 
 ### 2. 
 
+The **failure-inducing** input that prompted me to make that change is 
+
+The code change diff: 
 ![Code Change With Brackets Without Link][Commit Without Link]
 
-The **failure-inducing** input that prompted me to make that change is 
-.
-
-Link to the test file for this failure-inducing input.
+Link to the test file for this failure-inducing input: 
+[test-brackets.md](https://github.com/thanhnhanlam/markdown-parser/blob/main/test-brackets.md)
 
 The symptom of the failure-inducing input: 
 ```
@@ -51,19 +54,18 @@ Exception in thread "main" java.lang.StringIndexOutOfBoundsException: begin 0, e
 
 ### 3. 
 
+The **failure-inducing** input that prompted me to make that change is 
+
+The code change diff: 
 ![Code Change End With Open Bracket][Commit End Open Bracket]
 
-The **failure-inducing** input that prompted me to make that change is 
-.
-
-Link to the test file for this failure-inducing input.
+Link to the test file for this failure-inducing input: 
+[test-file7.md](https://github.com/thanhnhanlam/markdown-parser/blob/main/test-files/test-file7.md)
 
 In order to make the symptom visible, a counter for the number of iterations of the loop and 
 a corresponding print statement were added. 
 The symptom of the failure-inducing input: 
 ```
-Add a counter to MarkdownParse.java to test files
-java MarkdownParse test-files/test-file7.md
 0
 1
 2
