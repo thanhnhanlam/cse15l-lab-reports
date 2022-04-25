@@ -10,10 +10,12 @@ This lab report will focus on three of these changes.
 
 ![Code Change With Extra Line][Commit Extra Line]
 
-Link to the test file for the corresponding failure-inducing input.
+The **failure-inducing** input that prompted me to make that change is 
+**adding an extra line at the end of the file**.
 
-The symptom of the failure-inducing input:
+Link to the test file for this failure-inducing input.
 
+The symptom of the failure-inducing input: 
 ```
 Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
 at java.base/java.util.Arrays.copyOf(Arrays.java:3511)
@@ -31,11 +33,52 @@ the bug, the symptom, and the failure-inducing input.
 
 ### 2. 
 
-![Code Change Without Link][Commit Without Link]
+![Code Change With Brackets Without Link][Commit Without Link]
+
+The **failure-inducing** input that prompted me to make that change is 
+.
+
+Link to the test file for this failure-inducing input.
+
+The symptom of the failure-inducing input: 
+```
+Exception in thread "main" java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 37
+        at java.base/java.lang.String.checkBoundsBeginEnd(String.java:3734)
+        at java.base/java.lang.String.substring(String.java:1903)
+        at MarkdownParse.getLinks(MarkdownParse.java:20)
+        at MarkdownParse.main(MarkdownParse.java:31)
+```
 
 ### 3. 
 
 ![Code Change End With Open Bracket][Commit End Open Bracket]
+
+The **failure-inducing** input that prompted me to make that change is 
+.
+
+Link to the test file for this failure-inducing input.
+
+In order to make the symptom visible, a counter for the number of iterations of the loop and 
+a corresponding print statement were added. 
+The symptom of the failure-inducing input: 
+```
+Add a counter to MarkdownParse.java to test files
+java MarkdownParse test-files/test-file7.md
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+...
+```
 
 [Commit Without Link]: ../image/lab-report-2/commit-extra-line.png
 [Commit Extra Line]: ../image/lab-report-2/commit-without-link.png
