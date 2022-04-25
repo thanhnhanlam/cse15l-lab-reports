@@ -8,7 +8,7 @@ This lab report will focus on three of these changes.
 
 ### 1. Adding an extra line at the end of the file
 
-The **failure-inducing** input that prompted me to make that change is 
+The **failure-inducing** input that prompted me to make the change is 
 **adding an extra line at the end of the file**.
 
 The code change diff: 
@@ -33,9 +33,10 @@ at MarkdownParse.main(MarkdownParse.java:25)
 2-3 sentences describing the relationship between 
 the bug, the symptom, and the failure-inducing input.
 
-### 2. 
+### 2. Using brackets without link
 
 The **failure-inducing** input that prompted me to make that change is 
+**using a pair of brackets without a link**.
 
 The code change diff: 
 ![Code Change With Brackets Without Link][Commit Without Link]
@@ -52,9 +53,10 @@ Exception in thread "main" java.lang.StringIndexOutOfBoundsException: begin 0, e
         at MarkdownParse.main(MarkdownParse.java:31)
 ```
 
-### 3. 
+### 3. Ending the file with an open bracket
 
 The **failure-inducing** input that prompted me to make that change is 
+**ending the file with an open bracket**.
 
 The code change diff: 
 ![Code Change End With Open Bracket][Commit End Open Bracket]
