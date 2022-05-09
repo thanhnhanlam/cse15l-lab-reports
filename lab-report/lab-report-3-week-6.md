@@ -40,10 +40,31 @@ I am now able to commit and push a change to Github while logged into my ieng6 a
 
 * ### Copy whole directories with scp -r
 
+`scp -r` can copy recursively the markdown-parse directory and its content to my ieng6 account. 
+Here I copy my working directory from my local computer into the `markdown-parse` directory of my ieng6 account. 
+The `markdown-parse` directory on my remote account is created because it does not exist yet.
+
 ![SCP markdown-parse Directory to ieng6 Account][SCP Directory]
+
+After logging into my ieng6 account using `ssh`, I can go to the `markdown-parse` directory and run the tests.
+
 ![Logging into ieng6 Account and Running Tests][Tests]
 
+All these commands: 
+* `scp -r` to copy the directory,
+* `ssh` to connect to the ieng6 account, 
+* `cd` to go to the directory, 
+* `javac` to compile the code, and 
+* `java` to run the tests.
+
+can be united into one: 
+
+`scp -r . ieng6:~/markdown-parse;ssh ieng6 "cd markdown-parse;/software/CSE/oracle-java-17/jdk-17.0.1/bin/javac -cp ./:./lib/junit-4.13.2.jar:./lib/hamcrest-core-1.3.jar MarkdownParseTest.java;/software/CSE/oracle-java-17/jdk-17.0.1/bin/java -cp ./:./lib/junit-4.13.2.jar:./lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest"`.
+
 ![SCP Directory and Run Tests in One Line][SCP Tests Command]
+
+This single command copies the `markdown-parse` directory and runs the tests.
+
 ![Results of the One Line Command][SCP Tests Results]
 
 [Config Before]: ../image/lab-report-3/config-before.png
