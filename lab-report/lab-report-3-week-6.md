@@ -32,7 +32,7 @@ The private key is stored in the same directory as the public, at `~/.ssh/id_ed2
 
 ![Private Key][Private Key]
 
-I am now able to commit and push a change to Github while logged into my ieng6 account.
+After adding my SSH key to the ssh-agent (running `$ eval "$(ssh-agent -s)"`, then `ssh-add <path-to-private-key>`) and switching the remote URL from HTTPS to SSH (using `git remote set-url <remote-name> git@github.com:USERNAME/REPOSITORY.git`), I was able to commit and push a change to Github while logged into my ieng6 account.
 
 ![Git Commands][Git Commands]
 
