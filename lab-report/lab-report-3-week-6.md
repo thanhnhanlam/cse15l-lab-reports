@@ -20,10 +20,19 @@ Similarly, I could `scp` a file using this alias.
 
 * ### Setup Github Access from ieng6
 
+The public key is stored at `~/.ssh/id_ed25519_github.pub` of my user account.
+
 ![Public Key on User Account][Public Key User Account]
+
+I added the public key to my Github account in `Settings` -> `SHH and GPG keys` -> `SSH keys`.
+
 ![Public Key on Github][Public Key Github]
 
+The private key is stored in the same directory as the public, at `~/.ssh/id_ed25519_github`.
+
 ![Private Key][Private Key]
+
+I am now able to commit and push a change to Github while logged into my ieng6 account.
 
 ![Git Commands][Git Commands]
 
