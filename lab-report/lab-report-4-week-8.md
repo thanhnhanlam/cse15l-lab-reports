@@ -8,11 +8,26 @@
 
 ---
 
-### Output
+### Expected Output
 
-* #### Expected Output
+The tests for the three markdown snippets should produce the following output: 
 
-Code in MarkdownParseTest.java
+##### 1. Code Snippet 1
+```
+[`google.com, google.com, ucsd.edu]
+```
+
+##### 2. Code Snippet 2
+```
+[a.com, a.com(()), example.com]
+```
+
+##### 3. Code Snippet 3
+```
+[https://sites.google.com/eng.ucsd.edu/cse-15l-spring-2022/schedule]
+```
+
+### Code in MarkdownParseTest.java
 ```
 @Test
 public void testSnippet1() throws IOException {
@@ -38,6 +53,8 @@ public void testSnippet3() throws IOException {
     assertEquals(testFileLinks, MarkdownParse.getLinks(testFileContent));
 }
 ```
+
+### Output
 
 * #### My implementation
 
