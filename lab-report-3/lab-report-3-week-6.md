@@ -67,17 +67,17 @@ This single command copies the `markdown-parse` directory and runs the tests.
 
 ![Results of the One Line Command][SCP Tests Results]
 
-[Config Before]: ../image/lab-report-3/config-before.png
-[Config After]: ../image/lab-report-3/config-after.png
-[SSH Login]: ../image/lab-report-3/ssh-login.png
-[SCP]: ../image/lab-report-3/scp.png
-[Public Key User Account]: ../image/lab-report-3/public-key-user-account.png
-[Public Key Github]: ../image/lab-report-3/public-key-github.png
-[Private Key]: ../image/lab-report-3/private-key.png
-[Git Commands]: ../image/lab-report-3/git-commands.png
-[SCP Directory]: ../image/lab-report-3/scp-directory.png
-[Tests]: ../image/lab-report-3/tests.png
-[SCP Tests Command]: ../image/lab-report-3/scp-tests-command.png
-[SCP Tests Results]: ../image/lab-report-3/scp-tests-results.png
+[Config Before]: images/config-before.png
+[Config After]: images/config-after.png
+[SSH Login]: images/ssh-login.png
+[SCP]: images/scp.png
+[Public Key User Account]: images/public-key-user-account.png
+[Public Key Github]: images/public-key-github.png
+[Private Key]: images/private-key.png
+[Git Commands]: images/git-commands.png
+[SCP Directory]: images/scp-directory.png
+[Tests]: images/tests.png
+[SCP Tests Command]: images/scp-tests-command.png
+[SCP Tests Results]: images/scp-tests-results.png
 
 [Commit]: https://github.com/thanhnhanlam/markdown-parser/commit/8fc320bd6cb38505197931bf19887dbd37c1793d
