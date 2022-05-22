@@ -167,6 +167,6 @@ Replace `<user-name>` by the username of your local computer.
 [Run Commands]: images/run-commands.png
 [Program File]: images/program-file.png
 [Run SCP]: images/run-scp.png
-[SSH Keys]: imagess/ssh-keys.png
+[SSH Keys]: images/ssh-keys.png
 [Login Without Password]: images/login-without-password.png
 [Optimized Command]: images/optimized-command.png
