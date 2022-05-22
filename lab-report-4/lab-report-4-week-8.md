@@ -94,10 +94,10 @@ If yes, describe the code change. If not, describe why it would be a more involv
     I think there is a small code change that will make my program work 
     for snippet 3 and all related cases that have newlines in brackets and parentheses. 
 
-I would have to: 
-* check whether the opening parenthesis is followed by a new line, 
-* check whether the closing parenthesis is preceded by a new line, and
-* ensure that there is non space inside the link.
+    I would have to: 
+    * check whether the opening parenthesis is followed by a new line, 
+    * check whether the closing parenthesis is preceded by a new line, and
+    * ensure that there is non space inside the link.
 
 
 
