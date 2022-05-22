@@ -73,26 +73,26 @@ None of the tests passed for the implementation I reviewed.
 for snippet 1 and all related cases that use inline code with backticks? 
 If yes, describe the code change. If not, describe why it would be a more involved change.
 
-I don't think there is a small code change that will make my program work for snippet 1 and all related cases that use inline code with backticks. 
-I think it would be a more involved change because I would have to keep track of the number of backticks. 
-Then, I would have to find whether each link's brackets are inside a pair of backticks or between two pairs of backticks.
+    I don't think there is a small code change that will make my program work for snippet 1 and all related cases that use inline code with backticks. 
+    I think it would be a more involved change because I would have to keep track of the number of backticks. 
+    Then, I would have to find whether each link's brackets are inside a pair of backticks or between two pairs of backticks.
 
 2. Do you think there is a small (<10 lines) code change that will make your program work 
 for snippet 2 and all related cases that nest parentheses, brackets, and escaped brackets? 
 If yes, describe the code change. If not, describe why it would be a more involved change.
 
-I think there is a small code change that will make my program work for snippet 2 and all related cases 
-that nest parentheses, brackets, and escaped brackets because I only have to check 
-whether each bracket before the opening parenthesis are escaped. 
-If they are not escaped, then I end the search for the current link and search for another one (starting with an opening bracket). 
-If they are escaped, then I can continue my current search for the link as if there was not bracket.
+    I think there is a small code change that will make my program work for snippet 2 and all related cases 
+    that nest parentheses, brackets, and escaped brackets because I only have to check 
+    whether each bracket before the opening parenthesis are escaped. 
+    If they are not escaped, then I end the search for the current link and search for another one (starting with an opening bracket). 
+    If they are escaped, then I can continue my current search for the link as if there was not bracket.
 
 3. Do you think there is a small (<10 lines) code change that will make your program work 
 for snippet 3 and all related cases that have newlines in brackets and parentheses? 
 If yes, describe the code change. If not, describe why it would be a more involved change.
 
-I think there is a small code change that will make my program work 
-for snippet 3 and all related cases that have newlines in brackets and parentheses. 
+    I think there is a small code change that will make my program work 
+    for snippet 3 and all related cases that have newlines in brackets and parentheses. 
 
 I would have to: 
 * check whether the opening parenthesis is followed by a new line, 
