@@ -58,8 +58,14 @@ public void testSnippet3() throws IOException {
 
 * #### My implementation
 
+None of the tests passed for my implementation.
+
+![The JUnit output that shows the test failure for my implementation][My Output]
+
 * #### The implementation I reviewed
 
+None of the tests passed for the implementation I reviewed.
+![The JUnit output that shows the test failure for the implementation I reviewed][Reviewed Output]
 
 ## Question
 
@@ -71,3 +77,5 @@ public void testSnippet3() throws IOException {
 
 [My markdown-parse Repository]: https://github.com/thanhnhanlam/markdown-parser.git
 [Reviewed markdown-parse Repository]: https://github.com/NuojinliXu/markdown-parser
+[My Output]: 
+[Reviewed Output]: 
