@@ -77,5 +77,5 @@ None of the tests passed for the implementation I reviewed.
 
 [My markdown-parse Repository]: https://github.com/thanhnhanlam/markdown-parser.git
 [Reviewed markdown-parse Repository]: https://github.com/NuojinliXu/markdown-parser
-[My Output]: 
-[Reviewed Output]: 
+[My Output]: images/my-output.png
+[Reviewed Output]: images/reviewed-output.png
