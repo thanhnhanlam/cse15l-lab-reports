@@ -15,28 +15,28 @@
 Code in MarkdownParseTest.java
 ```
 @Test
-    public void testSnippet1() throws IOException {
-        List<String> testFileLinks = List.of("`google.com", "google.com", "ucsd.edu");
-        Path testFile = Path.of(LAB4_FOLDER + "snippet1.md");
-        String testFileContent = Files.readString(testFile);
-        assertEquals(testFileLinks, MarkdownParse.getLinks(testFileContent));
-    }
-    
-    @Test
-    public void testSnippet2() throws IOException {
-        List<String> testFileLinks = List.of("a.com", "a.com(())", "example.com");
-        Path testFile = Path.of(LAB4_FOLDER + "snippet2.md");
-        String testFileContent = Files.readString(testFile);
-        assertEquals(testFileLinks, MarkdownParse.getLinks(testFileContent));
-    }
+public void testSnippet1() throws IOException {
+    List<String> testFileLinks = List.of("`google.com", "google.com", "ucsd.edu");
+    Path testFile = Path.of(LAB4_FOLDER + "snippet1.md");
+    String testFileContent = Files.readString(testFile);
+    assertEquals(testFileLinks, MarkdownParse.getLinks(testFileContent));
+}
 
-    @Test
-    public void testSnippet3() throws IOException {
-        List<String> testFileLinks = List.of("https://sites.google.com/eng.ucsd.edu/cse-15l-spring-2022/schedule");
-        Path testFile = Path.of(LAB4_FOLDER + "snippet3.md");
-        String testFileContent = Files.readString(testFile);
-        assertEquals(testFileLinks, MarkdownParse.getLinks(testFileContent));
-    }
+@Test
+public void testSnippet2() throws IOException {
+    List<String> testFileLinks = List.of("a.com", "a.com(())", "example.com");
+    Path testFile = Path.of(LAB4_FOLDER + "snippet2.md");
+    String testFileContent = Files.readString(testFile);
+    assertEquals(testFileLinks, MarkdownParse.getLinks(testFileContent));
+}
+
+@Test
+public void testSnippet3() throws IOException {
+    List<String> testFileLinks = List.of("https://sites.google.com/eng.ucsd.edu/cse-15l-spring-2022/schedule");
+    Path testFile = Path.of(LAB4_FOLDER + "snippet3.md");
+    String testFileContent = Files.readString(testFile);
+    assertEquals(testFileLinks, MarkdownParse.getLinks(testFileContent));
+}
 ```
 
 * #### My implementation
