@@ -87,6 +87,6 @@ Therefore, in **a file that contained an opening bracket without a closing brack
 the loop of **the program kept searching for a link from the same index**, created an **infinite loop**, which led to an `OutOfMemoryError`.
 
 
-[Commit Without Link]: ../image/lab-report-2/commit-extra-line.png
-[Commit Extra Line]: ../image/lab-report-2/commit-without-link.png
-[Commit End Open Bracket]: ../image/lab-report-2/commit-end-open-bracket.png
+[Commit Without Link]: images/commit-extra-line.png
+[Commit Extra Line]: images/commit-without-link.png
+[Commit End Open Bracket]: images/commit-end-open-bracket.png
