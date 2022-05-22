@@ -4,20 +4,22 @@
 
 ---
 
+## Lab Reports
+
 1. [__Lab Report 1__][Lab Report 1]
 
 2. [*Lab Report 2*][Lab Report 2]
 
-* [Lab Report 3][Lab Report 3]
+* [`Lab Report 3`][Lab Report 3]
 
-* [`Lab Report 4`][Lab Report 4]
+* [Lab Report 4][Lab Report 4]
 
 ***
 
+Link to this page (to copy the link more easily for assignments): 
 ```
-Link to a
+https://thanhnhanlam.github.io/cse15l-lab-reports/
 ```
-[newFile](https://thanhnhanlam.github.io/cse15l-lab-reports/newFile.html)
 
 [Github Repo]: https://github.com/thanhnhanlam/cse15l-lab-reports.git
 [Lab Report 1]: lab-report-1-week-2.html
