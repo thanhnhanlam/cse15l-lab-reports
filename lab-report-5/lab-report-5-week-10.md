@@ -19,10 +19,10 @@ the Markdown file [487.md][Test File 1] contains no link, so the correct output 
 []
 ```
 
-Therefore, the output of the provided implementation is correct.
+Therefore, the output of the provided implementation is **correct**.
 ![Provided Implementations's Output 1][Provided Output 1]
 
-The output of my implementation was wrong.
+The output of my implementation was **wrong**.
 ![My Implementation's Output Test 1][My Output 1]
 
 #### 2. Test File: [496.md][Test File 2]
@@ -33,10 +33,10 @@ the Markdown file [496.md][Test File 2] contains no link, so the correct output 
 []
 ```
 
-Therefore, the output of the provided implementation is correct.
+Therefore, the output of the provided implementation is **correct**.
 ![Provided Implentation's Output 2][Provided Output 2]
 
-The output of my implementation was wrong.
+The output of my implementation was **wrong**.
 ![My Implementation's Output Test 2][My Output 2]
 
 
