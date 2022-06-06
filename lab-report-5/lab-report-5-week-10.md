@@ -1,6 +1,10 @@
 # Lab Report 5
 
-### Finding the tests with different results
+### Finding the Tests with Different Results
+
+I used `vimdiff` on the results of running a bash for loop to compare the output of the different implementations.
+
+![Vimdiff][Vimdiff]
 
 ###### Link to the test-files with different results
 
@@ -24,7 +28,7 @@ Which implementation is correct (or neither)?
 
 ![Provided Implentation's Output 2][Provided Output 2]
 
-
+[Vimdiff]: ./images/vimdiff.png
 [Expected Output 1]: 
 [My Ouput 1]: 
 [Provided Output 1]: 
