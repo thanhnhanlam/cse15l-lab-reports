@@ -20,10 +20,10 @@ the Markdown file [487.md][Test File 1] contains no link, so the correct output 
 ```
 
 Therefore, the output of the provided implementation is correct.
-![My Implementation's Output Test 1][My Output 1]
+![Provided Implementations's Output 1][Provided Output 1]
 
 The output of my implementation was wrong.
-![Provided Implementations's Output 1][Provided Output 1]
+![My Implementation's Output Test 1][My Output 1]
 
 #### 2. Test File: [496.md][Test File 2]
 
@@ -34,10 +34,10 @@ the Markdown file [496.md][Test File 2] contains no link, so the correct output 
 ```
 
 Therefore, the output of the provided implementation is correct.
-![My Implementation's Output Test 1][My Output 1]
+![Provided Implentation's Output 2][Provided Output 2]
 
 The output of my implementation was wrong.
-![Provided Implentation's Output 2][Provided Output 2]
+![My Implementation's Output Test 2][My Output 2]
 
 
 [Test File 1]: https://github.com/thanhnhanlam/markdown-parser/blob/a3e7910dbc708af9b9e02cdea4bb4e9ed90bf7cd/test-files/487.md
